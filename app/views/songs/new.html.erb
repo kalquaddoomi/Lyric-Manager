@@ -1,0 +1,11 @@
+<%= link_to " Cancel and return to Song List", root_path %>
+<%= form_with model: @song, class: "new_song_form" do |f| %>
+  <%= label_tag(:title, "Song Title:") %>
+  <%= f.text_field :title %>
+  <%= label_tag(:lyrics, "Lyrics:") %>
+  <%= f.text_area :lyrics, size: "60x40" %>
+  <div class="new_song_buttons">
+  <%= f.submit "Add New Song" %>
+  <%= link_to button_tag("Cancel"), root_path %>
+  </div>
+<% end %>

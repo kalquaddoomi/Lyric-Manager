@@ -1,0 +1,8 @@
+<div class="show_song_options">
+<%= link_to "Back to Songs",  root_path%>
+<%= link_to "Edit this Song", :action => :edit, :id => @song %>
+</div>
+<h2><%= @song.title %></h2>
+<pre>
+  <%= @song.lyrics %>
+</pre>

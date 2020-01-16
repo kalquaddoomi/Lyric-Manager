@@ -1,0 +1,10 @@
+<div>
+  <h4>Pair~A~Dice Tumblers</h4>
+
+  <div class="list_header"><span class="list_title">Song List</span><span><%= link_to "New Song", :action => :new %></span></div>
+  <ul>
+  <% for song in @songs -%>
+      <li><%=  link_to song.title, song %></li>
+  <% end -%>
+  </ul>
+</div>

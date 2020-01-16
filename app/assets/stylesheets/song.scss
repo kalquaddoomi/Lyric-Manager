@@ -1,0 +1,31 @@
+// Place all the styles related to the Song controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  width: 80%;
+  margin: auto;
+}
+.list_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.new_song_form {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.new_song_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  button, input {
+    width: 180px;
+  }
+
+}
