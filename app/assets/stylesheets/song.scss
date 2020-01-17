@@ -10,7 +10,11 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-
+.list_song_list {
+  li {
+    margin-top: 15px;
+  }
+}
 .new_song_form {
   display: flex;
   flex-direction: column;
@@ -18,7 +22,6 @@ body {
   justify-content: space-around;
   align-items: stretch;
 }
-
 .new_song_buttons {
   display: flex;
   flex-direction: row;
@@ -28,7 +31,6 @@ body {
     width: 180px;
   }
 }
-
 .show_song_options {
   margin-top: 20px;
   width: 50%;
