@@ -3,7 +3,7 @@
   <%= label_tag(:title, "Song Title:") %>
   <%= f.text_field :title %>
   <%= label_tag(:lyrics, "Lyrics:") %>
-  <%= f.text_area :lyrics, size: "60x40" %>
+  <%= f.text_area :lyrics, size: "60x35" %>
   <div class="new_song_buttons">
     <%= f.submit "Update Song" %>
     <%= link_to button_tag("Cancel"), @song %>
