@@ -4,6 +4,8 @@
   <%= f.text_field :title %>
   <%= label_tag(:lyrics, "Lyrics:") %>
   <%= f.text_area :lyrics, size: "60x35" %>
+  <%= label_tag(:tags, "Comma Seperated Tags [add disabled to prevent song from showing in App]") %>
+  <%= f.text_field :tags %>
   <div class="new_song_buttons">
     <%= f.submit "Update Song" %>
     <%= link_to button_tag("Cancel"), @song %>
