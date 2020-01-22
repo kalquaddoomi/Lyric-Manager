@@ -2,7 +2,7 @@ class SongsController < ApplicationController
   protect_from_forgery
 
   def index
-    @songs = Song.all
+    @songs = Song.order('songs.title ASC').all
   end
 
   def show
